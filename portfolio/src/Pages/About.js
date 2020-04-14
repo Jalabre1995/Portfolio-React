@@ -3,9 +3,11 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 import Picture from "../components/Picture"
+import Navbar from "../components/Navbar.js"
 
 function About() {
     return (
+        <Navbar>
         <div>
             <Picture backgroundImage ="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/383690/f7a121a3f7a929ffb4dbc3ae241b3b4b6eaaed1d.jpg">
                 <h1>About Me</h1>
@@ -38,6 +40,7 @@ function About() {
                 </Row>
             </Container>
         </div>
+        </Navbar>
     );
 }
 
