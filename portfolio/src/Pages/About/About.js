@@ -1,9 +1,9 @@
 import React from 'react';
-import Container from "../components/Container";
-import Row from "../components/Row";
-import Col from "../components/Col";
-import Picture from "../components/Picture"
-import Navbar from "../components/Navbar.js"
+import Container from "../../components/Container.js";
+import Row from "../../components/Row.js";
+import Col from "../../components/Col.js";
+import Picture from "../../components/Picture.js";
+import Navbar from "../../components/Navbar.js";
 
 function About() {
     return (
