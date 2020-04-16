@@ -13,8 +13,8 @@ export default class Portfolio extends Component {
                                     return (
                                         <div className='columns portfolio-item'>
                                             <div className='item-wrap'>
-                                                <a href='https://github.com/justindurocher/Video-Game-Search-App'>
-                                                    <img src='' className='GameAPI' /> 
+                                                <a href='#images-01'>
+                                                    <img src={`${item.imgurl}`} alt = 'images' className="item-img"/> 
                                                     <div className='overlay'>
                                                         <div className='portfolio-item-meta'>
                                                             <h5>{item.name}</h5>
