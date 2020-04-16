@@ -9,7 +9,7 @@ function About() {
     return (
         <Navbar>
         <div>
-            <Picture backgroundImage ="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/383690/f7a121a3f7a929ffb4dbc3ae241b3b4b6eaaed1d.jpg">
+            <Picture backgroundImage ="Header-background.jpg">
                 <h1>About Me</h1>
             </Picture>
             <Container style ={{marginTop: 30}}>
