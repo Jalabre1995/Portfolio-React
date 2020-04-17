@@ -1,38 +1,105 @@
 import React, { Component } from 'react';
-export default class Portfolio extends Component {
-    render() {
-        let resumeData = this.props.resumeData;
-        return (
-            <section id='portfolio'>
-                <div className='row'>
-                    <div className='twelve colums collapsed'>
-                        <h1> Check Out Some of the Work I Did!</h1>
-                        <div id='portfolio-wrapper' className='bgrid-quarters s-bgrid-thirds cf'>
-                            {
-                                resumeData.portfolio && resumeData.portfolio.map((item) => {
-                                    return (
-                                        <div className='columns portfolio-item'>
-                                            <div className='item-wrap'>
-                                                <a href='#images-01'>
-                                                    <img src={`${item.imgurl}`} alt = 'images' className="item-img"/> 
-                                                    <div className='overlay'>
-                                                        <div className='portfolio-item-meta'>
-                                                            <h5>{item.name}</h5>
-                                                            <p>{item.description}</p>
+import { Grid, Tab, Tabs, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+class Portfolio extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { activeTab: 0 };
+    }
 
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    )
-                                })
-                            }
-                        </div>
+    toggleCategories() {
+        if (this.state.activeTab === 0) {
+            return(
+                <div className='portfolio-grid'>
+                    {/*Project 1*/}
+                    <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYRKDUVMpAlYBEyo9sFpc2XUExhYXWghakO2Gjo2qdZDhTNOrHxg&s)' }}>Video-Game-Search-App </CardTitle>
+                        <CardText>
+                            Search for related information via the title of the game
+                            Successfully retrieved the information from two API (RAWG) and (News API).
+                            Worked on the front-end using Semantic-UI.
+                            RAWG API, News API, Semantic.
 
-                    </div>
+                            </CardText>
+                        <CardActions border>
+                            <Button colored>Github</Button>
+                        </CardActions>
+                        <CardMenu style={{ color: '#fff' }}>
+                            <IconButton name='share' />
+                        </CardMenu>
+                    </Card>
+                    {/*Project2*/}
+                    <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYRKDUVMpAlYBEyo9sFpc2XUExhYXWghakO2Gjo2qdZDhTNOrHxg&s)' }}>NBA-Game </CardTitle>
+                        <CardText>
+                            Created a NBA game that allows users to choose 5 players from their favoirite team.via the title of the game.
+
+                            </CardText>
+                        <CardActions border>
+                            <Button colored>Github</Button>
+                        </CardActions>
+                        <CardMenu style={{ color: '#fff' }}>
+                            <IconButton name='share' />
+                        </CardMenu>
+                    </Card>
+                    {/*Project 3*/}
+                    <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYRKDUVMpAlYBEyo9sFpc2XUExhYXWghakO2Gjo2qdZDhTNOrHxg&s)' }}>Password-Generator </CardTitle>
+                        <CardText>
+                            Small Java library that allows you to generate random passwords.
+                            Created the randomization password generator successfully.
+                            Worked on the frontend and backend.
+                            Javascript.
+                         </CardText>
+                        <CardActions border>
+                            <Button colored>Github</Button>
+                        </CardActions>
+                        <CardMenu style={{ color: '#fff' }}>
+                            <IconButton name='share' />
+                        </CardMenu>
+                    </Card>
+                    {/*Project 4*/}
+                    <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYRKDUVMpAlYBEyo9sFpc2XUExhYXWghakO2Gjo2qdZDhTNOrHxg&s)' }}>Employee-Management-System App </CardTitle>
+                        <CardText>
+                            Search for related information via the title of the game
+                            Successfully retrieved the information from two API (RAWG) and (News API).
+                            Worked on the front-end using Semantic-UI.
+                            RAWG API, News API, Semantic.
+
+                            </CardText>
+                        <CardActions border>
+                            <Button colored>Github</Button>
+                        </CardActions>
+                        <CardMenu style={{ color: '#fff' }}>
+                            <IconButton name='share' />
+                        </CardMenu>
+                    </Card>
+
                 </div>
-            </section>
-        );
+            )
+        }
+    }
+    render() {
+        return (
+            <div>
+                <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+                    <Tab>React</Tab>
+                    <Tab>MongoDB</Tab>
+                    <Tab>IndexDB</Tab>
+                    <Tab>Javascript</Tab>
+                </Tabs>
+
+                <Grid>
+                    <Cell col={12}>
+                        <div className='content'>{this.toggleCategories()}</div>
+                    </Cell>
+                </Grid>
+
+
+            </div>
+        )
     }
 }
+
+
+export default Portfolio;
