@@ -18,6 +18,19 @@ class LandingPage extends Component {
                         
                         
                         <hr/>
+                        <p>Frontend: HTML5| CSS | Jquery | Javascript | Bootstrap | Ajax |Semanti UI | React-MDL</p>
+                        <p>Backend: MYSQL | Express | ReactJs | Node | Handlebars | IndexDB | MongoDB</p>
+
+                        <div className='socialLinks'>
+                            {/*LinkedIn profile*/}
+                            <a href='http://google.com' rel='noopener noreferrer'  target='__blank'>
+                                <i className='fa fa-linkedin-square' aria-hidden= 'true' />
+                            </a>
+                              {/*LinkedIn Github*/}
+                              <a href='http://google.com' rel='noopener noreferrer'  target='__blank'>
+                                <i className='fa fa-github-square' aria-hidden= 'true' />
+                            </a> 
+                        </div>
                     </div>
                 </Grid>
             </div>
