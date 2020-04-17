@@ -1,26 +1,40 @@
 import React, { Component } from 'react';
-export default class Contact extends Component{
-    render(){
-        let resumeData = this.props.resumeData;
-        return (
-            <section id='contact'>
-                <div className='row section-head'>
-                    <div className= 'ten columns'>
-                        <p className='lead'>
-                            Feel free to contact me for any project suggestions.
-                        </p>
-                    </div>
-                </div>
-                <div className='row'>
-                    <aside className='eight columns footer-widgets'>
-                        <div className='widget'>
-                            <h4> Linked in :
-                                {resumeData.linkedId}
-                            </h4>
+import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
+
+
+class Contact extends Component{
+    render() {
+        return(
+            <div className='contact-body'>
+                <Grid className='contact-grid'>
+                    <Cell col= {6}>
+                        <h2>Joshua Alabre</h2>
+                        <img
+                        src='https://nmcdn.io/bf48b01813174d27941cb0fe2037c1cb/122c4cdb603f4a0894d9f40c7e0072ff/files/about/meet-our-team/JoshAla.jpg'
+                        alt='Joshua Alabre'
+                        style={{height: '250px'}}
+                        />
+                        <p style={{width:'75%', margin: 'auto', paddingTop: '1em'}}>Reach out to me anytime for coding ideas and Projects I can do!</p>
+                    </Cell>
+                    <Cell col={6}>
+                        <h2>Contact Me</h2>
+                        <hr/>
+                        <div className='contact-list'>
+                            <List>
+                                <ListItem>
+                                    <ListItemContent style={{fontSize: '30px', fontFamily:'Anton'}}>
+                                        <i className='fa fa-envelope' aria-hidden='true'/>
+                                        joshuaalabre@gmail.com
+                                    </ListItemContent>
+                                </ListItem>
+                            </List>
                         </div>
-                    </aside>
-                </div>
-            </section>
+                    </Cell>
+                </Grid>
+            </div>
+
         )
     }
 }
+
+export default Contact;
