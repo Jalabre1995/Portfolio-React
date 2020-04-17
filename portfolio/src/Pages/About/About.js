@@ -1,26 +1,10 @@
-import React from 'react';
-import Container from "../../components/Container/Container.js";
-import Row from "../../components/Row/Row.js";
-import Col from "../../components/Col/Col.js";
-import Picture from "../../components/Picture/Picture.js";
-import Navbar from "../../components/Navbar/Navbar.js";
+import React, {Component} from 'react';
 
-function About() {
-    return (
-        <Navbar>
-        <div>
-            <Picture backgroundImage ="Header-background.jpg">
-                <h1>About Me</h1>
-            </Picture>
-            <Container style ={{marginTop: 30}}>
-                <Row>
-                    <Col size="md-12">
-                        <h1>Here is what you need to know about me!</h1>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col size= "md-12">
-                <p>Hey there! My name is Joshua Alabre and I love to code!
+class About extends Component {
+    render() {
+        return(
+            <div><h1>About Page</h1>
+            <p>Hey there! My name is Joshua Alabre and I love to code!
                   I am from Hartford, Connecticut and when it comes to coding, it is always about probelm solving.
                   I always feel accomlished whenever I make my code work. From small to big fixes, I
                   love figuring out what elements makes a code do what. I speacialize in HTML, Javascript, and CSS.</p>
@@ -36,12 +20,12 @@ function About() {
                     I am also apart of a track club called Hartbeat track club and train for half-marathons
                     I also love playing video games. Best genre of games for me is RPG(Role Playing) and FPS(First
                     Person Shooters.</p>
-                    </Col>
-                </Row>
-            </Container>
-        </div>
-        </Navbar>
-    );
+            
+            
+            
+            </div>
+        )
+    }
 }
-
+  
 export default About;
