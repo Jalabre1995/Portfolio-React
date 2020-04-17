@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Cell, Grid } from 'react-mdl';
-import Education from 
+import Education from '../Education/Education .js';
+import Expereince from '../Expereince/Expereince.js';
+import Skills from '../Skills/Skills.js';
 
 class Resume extends Component {
     render() {
@@ -19,7 +21,7 @@ class Resume extends Component {
                         <h4 style={{ color: 'grey' }}>Full Stack Developer</h4>
                         <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
                         <p>Multidisciplinary Full Stack Developer with a passion for condensing large data into a simple to understand format. And build websites from mockup to rollout. Adept at working independently as well as collaborating with teams across multiple functions to break down concepts in easy terms.Prepared to excel in solving complex problems.
-</p>
+                        </p>
                         <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
                         <h5>Address</h5>
                         <h5>Email</h5>
@@ -45,7 +47,7 @@ class Resume extends Component {
 
                         <h2>Expereince</h2>
 
-                        <Expereinece
+                        <Expereince
                             startYear={2019}
                             endYear='Current'
                             jobYear='First Job'
@@ -95,10 +97,15 @@ class Resume extends Component {
 
                     </Cell>
                 </Grid>
-                
-                
+                </div>
+
         )
     }
 }
+
+
+
+            
+ 
 
 export default Resume;
