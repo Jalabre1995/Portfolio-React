@@ -23,7 +23,7 @@ render(){
             <br/>
             <ul className='social'>
               {
-                resumeData.socialLinks && resumeData.socialLink.map(item => {
+                resumeData.socialLinks && resumeData.socialLinks.map(item => {
                   return(
                     <li key={item.name}>
                       <a href={item.url} target='__blank'><li className= {item.className}></li></a>
