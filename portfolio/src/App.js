@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
+import './App.css'
 import {Layout, Header, Navigation, Drawer, Content} from 'react-mdl'
 import Main from './components/Main/Main.js';
 import {Link} from 'react-router-dom';
-import './App.css'
+
 class App extends Component {
   render(){
     return (
@@ -10,18 +11,18 @@ class App extends Component {
       <Layout>
           <Header className="header-color" title={<Link style ={{textDecoration: 'none', color: 'white'}} to="/">Welcome!</Link>}scroll>
               <Navigation>
-                  <a href="/resume">Resume</a>
-                  <a href="/about">About</a>
-                  <a href="/portfolio">Portfolio</a>
-                  <a href="/contact">Contact</a>
+                  <Link to ="/resume">Resume</Link>
+                  <Link to ="/about">About</Link>
+                  <Link to ="/portfolio">Portfolio</Link>
+                  <Link to ="/contact">Contact</Link>
               </Navigation>
           </Header>
-          <Drawer title="Title">
+          <Drawer title="Sections">
               <Navigation>
-                  <a href="/resume">Resume</a>
-                  <a href="/about">About</a>
-                  <a href="/portfolio">Portfolio</a>
-                  <a href="/contact">Contact</a>
+                  <Link to ="/resume">Resume</Link>
+                  <Link to ="/about">About</Link>
+                  <Link to ="/portfolio">Portfolio</Link>
+                  <Link to ="/contact">Contact</Link>
               </Navigation>
           </Drawer>
           <Content>

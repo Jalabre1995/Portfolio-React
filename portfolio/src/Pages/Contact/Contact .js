@@ -17,7 +17,7 @@ class Contact extends Component{
                         />
                         <p style={{width:'75%', margin: 'auto', paddingTop: '1em'}}>Reach out to me anytime for coding ideas and Projects I can do!</p>
                     </Cell>
-                    <Cell col={6}>
+                    <Cell col={1}>
                         <h2>Contact Me</h2>
                         <hr/>
                         <div className='contact-list'>
