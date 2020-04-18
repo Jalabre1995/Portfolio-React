@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
 import {Layout, Header, Navigation, Drawer, Content} from 'react-mdl'
 import Main from './components/Main/Main.js';
-
+import {Link} from 'react-router-dom';
+import './App.css'
 class App extends Component {
   render(){
     return (
       <div className="demo-big-content">
       <Layout>
-          <Header div className = 'header-color' title="Title" scroll>
+          <Header className="header-color" title={<Link style ={{textDecoration: 'none', color: 'white'}} to="/">Welcome!</Link>}scroll>
               <Navigation>
                   <a href="/resume">Resume</a>
                   <a href="/about">About</a>

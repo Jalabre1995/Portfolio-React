@@ -1,8 +1,8 @@
 import React from 'react';
-import LandingPage from '../LandingPage/LandingPage.js';
 import { Switch, Route } from 'react-router-dom';
+import LandingPage from '../LandingPage/LandingPage.js';
 import About from '../../Pages/About/About.js';
-import Contact from '../../Pages/Contact/Contact.js';
+import Contact from '../../Pages/Contact/Contact .js';
 import Resume from '../Resume/Resume.js';
 import Portfolio from '../../Pages/Portfolio/Portfolio.js';
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Tab, Tabs, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import '../Portfolio/style.css'
 class Portfolio extends Component {
     constructor(props) {
         super(props);
@@ -77,6 +78,20 @@ class Portfolio extends Component {
 
                 </div>
             )
+
+        }else if(this.state.activeTab === 1) {
+            return (
+                <div><h1>This is Jquery</h1></div>
+            )
+        }else if(this.state.activeTab === 2){
+            return(
+                <div><h1>This is React </h1></div>
+            )
+
+        }else if(this.state.activeTab === 3) {
+            return(
+                <div><h1>This is MongoDB</h1></div>
+            )
         }
     }
     render() {
@@ -86,7 +101,7 @@ class Portfolio extends Component {
                     <Tab>React</Tab>
                     <Tab>MongoDB</Tab>
                     <Tab>IndexDB</Tab>
-                    <Tab>Javascript</Tab>
+                    <Tab>Jquery</Tab>
                 </Tabs>
 
                 <Grid>
