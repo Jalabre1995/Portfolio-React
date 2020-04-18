@@ -23,11 +23,11 @@ class LandingPage extends Component {
 
                         <div className='socialLinks'>
                             {/*LinkedIn profile*/}
-                            <a href='http://google.com' rel='noopener noreferrer'  target='__blank'>
+                            <a href='https://www.linkedin.com/in/joshua-alabre-6a628a10b/' rel='noopener noreferrer'  target='__blank'>
                                 <i className='fa fa-linkedin-square' aria-hidden= 'true' />
                             </a>
                               {/*LinkedIn Github*/}
-                              <a href='http://google.com' rel='noopener noreferrer'  target='__blank'>
+                              <a href='https://github.com/Jalabre1995' rel='noopener noreferrer'  target='__blank'>
                                 <i className='fa fa-github-square' aria-hidden= 'true' />
                             </a> 
                         </div>
